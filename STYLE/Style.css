@@ -1,0 +1,321 @@
+﻿/*----==Garrett Parker==----
+  This CSS script is made by
+  Garrett Parker, and is
+  built from the ground up */
+
+@font-face {
+    font-family: 'Sans Pro Regular';
+    src: url("./FONT/Source Sans Pro Regular.ttf");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Sans Pro SemiBold';
+    src: url("./FONT/Source Sans Pro SemiBold.ttf");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Sans Pro Bold';
+    src: url("./FONT/Source Sans Pro Bold.ttf");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Sans Pro Extra Light';
+    src: url("./FONT/Source Sans Pro Extra Light.ttf");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Halfling Regular';
+    src: url("./FONT/GLYFICONS Halflings Regular.ttf");
+}
+
+html, body {
+    min-width: 640px;
+    min-height: 640px;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    color: rgb( 0, 0, 0);
+}
+
+div.page {
+    height: 100%;
+    width: 100%;
+
+    top: 0;
+    left: 0;
+    right: 0;
+
+    background-position: center;
+    background-size: cover;
+    background-image: url("./IMAGES/Background-Blured.png");
+    background-color: rgb( 202, 227, 227);
+}
+
+
+/* Navagation Bar & Branding */
+    div.header {
+        width: 85%;
+        height: 60px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 3%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+        div.inline-block {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+    div.navigation {
+        width: 100%;
+        height: 100%;
+        border-style: solid;
+        border-radius: 4px;
+        border-width: 1px;
+        border-color: rgba( 0, 0, 0, 0.1);
+        background-color: rgb( 255, 255, 255);
+        box-shadow: 2px 2px 2px rgba( 200, 200, 200, 0.1);
+        display: inline-block;
+    }
+
+        div.brand {
+            height: 100%;
+            width: 200px;
+            margin-right: 1px;
+
+            display: inline-block;
+        }
+
+            /* Home Button */
+            div.brand:hover{
+                cursor: pointer;
+            }
+
+            div.brand:hover a {
+                color: rgb( 173, 184, 205);
+            }
+
+            div.brand a {
+                height: auto;
+                width: auto;
+                padding-top: 10%;
+                padding-bottom: 9%;
+                padding-left: 2%;
+                padding-right: 2%;
+                font-family: 'Sans Pro Bold';
+                letter-spacing: 1px;
+                font-weight: lighter;
+                text-align: center;
+                text-decoration: none;
+                color: rgb( 87, 160, 222);
+                font-size: 18px;
+            }
+
+        nav.nav-block {
+            width: auto;
+            height: 60px;
+            position: absolute;
+            display: inline-block;
+        }
+
+            div.nav-link, div.nav-link-big {
+                height: 100%;
+                display: inline-block;
+                background-color: rgba( 200, 200, 200, 0.2);
+            }
+
+                /* Hub Buttons */
+                div.nav-link:hover, div.nav-link-big:hover {
+                    background-color: rgba( 200, 200, 200, 0.4);
+                    cursor: pointer;
+                }
+
+                div.nav-link a {
+                    height: auto;
+                    width: auto;
+                    padding-top: 21%;
+                    padding-bottom: 20%;
+                    padding-left:  12%;
+                    padding-right: 12%;
+                    font-family: 'Sans Pro Regular';
+                    letter-spacing: 1px;
+                    font-weight: lighter;
+                    text-align: center;
+                    text-decoration: none;
+                    color: rgb( 103, 114, 135);
+                    font-size: 18px;
+                }
+
+                div.nav-link-big a{
+                    height: auto;
+                    width: auto;
+                    padding-top: 13%;
+                    padding-bottom: 12%;
+                    padding-left: 6%;
+                    padding-right: 6%;
+                    font-family: 'Sans Pro Regular';
+                    letter-spacing: 1px;
+                    font-weight: lighter;
+                    text-align: center;
+                    text-decoration: none;
+                    color: rgb( 103, 114, 135);
+                    font-size: 18px;
+                }
+
+    div.body {
+        width: 85%;
+        height: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        padding-left: 15px;
+        padding-right: 15px;
+        position: relative;
+    }
+        
+        div.text {
+            width: auto;
+            height: 35px;
+            margin-top: 0%;
+            margin-bottom: 1%;
+        }
+
+            div.text p {
+                font-family: 'Sans Pro Bold';
+                font-size: 40px;
+                text-align: center;
+                color: rgb( 48, 53, 62);
+            }
+
+        div.subtext {
+            width: auto;
+            height: 0px;
+            margin-top: 1%;
+            margin-bottom: 1%;
+        }
+
+            div.subtext p,a {
+                font-family: 'Sans Pro Extra Light';
+                font-weight: bold;
+                font-size: 20px;
+                text-align: center;
+                color: rgb( 48, 53, 62);
+            }
+			
+			div.subtext a {
+				color: purple;
+				text-decoration: none;
+			}
+
+        div.text-dark {
+            width: auto;
+            height: 45px;
+            margin-top: 1%;
+            margin-bottom: 1%;
+        }
+
+            div.text-dark p {
+                font-family: 'Sans Pro Bold';
+                font-size: 40px;
+                text-align: center;
+                color: rgb( 25, 25, 30);
+            }
+
+        div.subtext-dark {
+            width: auto;
+            height: 25px;
+            margin-top: 1%;
+            margin-bottom: 2%;
+        }
+
+            div.subtext-dark p {
+                font-family: 'Sans Pro Extra Light';
+                font-weight: bold;
+                font-size: 20px;
+                text-align: center;
+                color: rgb( 25, 25, 30);
+            }
+
+        div.content {
+
+        }
+
+        div.button-row {
+            width: 100%;
+            height: 50px;
+        }
+		
+			div.button:hover {
+				background-color: rgb( 120, 130, 148);
+				cursor: pointer;
+			}
+			
+			div.button:active {
+				cursor: wait;
+			}
+
+			div.button {
+				height: 80%;
+				width: auto;
+				margin-left: 5px;
+				margin-right: 5px;
+				display: inline-block;
+				background-color: rgb( 135, 145, 163);
+				border-radius: 4px;
+			}
+
+			div.button a {
+				height: auto;
+				width: auto;
+				padding-top: 20px;
+				padding-bottom: 20px;
+				padding-left:  5px;
+				padding-right: 5px;
+				font-family: 'Sans Pro Regular';
+				letter-spacing: 1px;
+				font-weight: bold;
+				text-align: center;
+				text-decoration: none;
+				color: rgb( 255, 255, 255);
+				font-size: 18px;
+			}
+
+    /* "Copyright" and To Top*/
+    div.footer {
+        width: 85%;
+        height: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 1%;
+        padding-left: 15px;
+        padding-right: 15px;
+        position: absolute;
+        bottom: 10px;
+    }
+
+    div.footer-copyright {
+        display: inline-block;
+        height: auto;
+        width: auto;
+    }
+
+        div.copyright p {
+            height: auto;
+            width: auto;
+            font-family: 'Sans Pro Regular';
+            font-size: 15px;
+        }
