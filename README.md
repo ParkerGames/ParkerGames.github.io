@@ -1,4 +1,4 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <!--  ----==Garrett Parker==----   -->
 <!--   This HTML script is built   -->
 <!--      by Garrett Parker        -->
