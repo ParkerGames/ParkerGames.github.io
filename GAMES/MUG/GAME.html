@@ -1,0 +1,74 @@
+﻿ <!DOCTYPE html>
+<!--  ----==Garrett Parker==----   -->
+<!--   This HTML script is built   -->
+<!--      by Garrett Parker        -->
+<html>
+    <head>
+        <!-- Define Page -->
+        <meta charset="utf-8" />
+        <title>ParkerGames - Game</title>
+        <meta name="keywords" content="ParkerGames, Parker, Games">
+        <meta name="description" content="The game MUG" />
+        <meta name="author" content="ParkerGames" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="../../STYLE/IMAGES/Icon.ico" />
+        <link rel="stylesheet" href="../../STYLE/Style.css" type="text/css" />
+		<link rel="stylesheet" href="TemplateData/style.css">
+		<script src="TemplateData/UnityProgress.js"></script>
+		<script src="Build/UnityLoader.js"></script>
+		<script>
+		var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Multiplayer Test.json", {onProgress: UnityProgress});
+		</script>
+    </head>
+    <body>
+        <div class="page" id="TOP">
+            <!-- Create Navigation Bar & Branding -->
+            <div class="header">
+                <div class="navigation">
+                    <div class="brand">
+                        <div class="inline-block">
+                            <a href="../../Index.html" >GARRETT PARKER</a>
+                        </div>
+                    </div>
+                    <nav class="nav-block">
+                        <div class="nav-link" style="width: 90px">
+                            <div class="inline-block">
+                                <a href="../../GAMES/Game-Hub.html" >GAMES</a>
+                            </div>
+                        </div>
+                        <div class="nav-link-big" style="width: 85px">
+                            <div class="inline-block">
+                                <a href="../../OTHER/Info.html" >INFO</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- Page Content -->
+            <div class="body">
+                <div class="text">
+                    <p>MUG</p>
+                </div>
+				<div class="content">
+					<div class="webgl-content">
+					  <div id="gameContainer" style="width: 1280px; height: 720px"></div>
+					  <div class="footer">
+						<div class="webgl-logo"></div>
+						<div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+						<div class="title">MUG</div>
+					  </div>
+					</div>
+				</div>
+            </div>
+            <!-- "Copyright" -->
+            <div class="footer">
+                <div class="footer-copyright">
+                    <div class="inline-block">
+                        <p>Copyright 2019 ParkerGames</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
